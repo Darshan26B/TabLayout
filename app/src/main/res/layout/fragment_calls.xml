@@ -6,7 +6,7 @@
     tools:context=".Fragment.CallsFragment">
 
     <TextView
-        android:id="@+id/txt_Calls_Fragment"
+        android:id="@+id/Calls_Fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"

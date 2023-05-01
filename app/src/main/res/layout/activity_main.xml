@@ -8,65 +8,9 @@
     tools:context=".MainActivity">
 
 
-    <LinearLayout
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:background="#075E54"
-        android:gravity="center|left"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:text="WhatsApp"
-            android:textColor="@color/white"
-            android:textSize="18dp"
-            android:textStyle="bold" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp">
-
-            <TextView
-                android:id="@+id/Chats"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="8"
-                android:gravity="center"
-                android:text="Chats"
-                android:textColor="@color/white"
-                android:textSize="15dp" />
-
-            <TextView
-                android:id="@+id/Status"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="8"
-                android:gravity="center"
-                android:text="Status"
-                android:textColor="@color/white"
-                android:textSize="15dp" />
-
-            <TextView
-                android:id="@+id/Calls"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:ems="9"
-                android:gravity="center"
-                android:text="Calls"
-                android:textColor="@color/white"
-                android:textSize="15dp" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/Viewpager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

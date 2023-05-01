@@ -11,24 +11,14 @@ import com.darshan.tablayout.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding= ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.Chats.setOnClickListener {
-            loadFragmens(ChatsFragment())
-        }
-        binding.Status.setOnClickListener {
-            loadFragmens(StatusFragment())
-        }
-        binding.Calls.setOnClickListener {
-            loadFragmens(CallsFragment())
-        }
+
+        binding.tabLayout.addTab(binding.tabLayout.newTab().setText("Chats"))
+        binding.tabLayout.addTab(binding.tabLayout.newTab().setText("Status"))
+        binding.tabLayout.addTab(binding.tabLayout.newTab().setText("Calls"))
     }
-
-    private fun loadFragmens(fragment: Fragment) {
-        supportFragmentManager.beginTransaction().replace(R.id.Viewpager,fragment).commit()
-
-    }
-
 }
